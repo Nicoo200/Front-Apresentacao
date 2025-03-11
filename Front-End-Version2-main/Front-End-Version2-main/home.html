@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustForYou</title>
+
+    <!-- Links CSS -->
+     <link rel="stylesheet" href="src/CSS/reset.css">
+    <link rel="stylesheet" href="src/CSS/styles.css">
+
+    <!-- Adicionando Links dos icones via CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+
+</head>
+<body>
+    <div class="overlay"></div>
+    <nav>
+        <div class="nav-container">
+            <div class="logo-placeholder">
+                <img src="/src/assets/logo sem fundo 1.png" alt="Logo">
+            </div>
+            <div class="nav-buttons">
+                <button class="icon-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+                <button class="icon-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="titulo">
+            <h1>Descubra o Filme/Série Baseado no seu Gosto.</h1>
+        </div>
+        
+        <div class="container-btn">
+            <a href="/Register.html">
+                <button class="open-modal" id="openRegisterModalButton" data-bs-toggle="modal" data-bs-target="#registerModal">
+                    <span class="fas fa-play"></span> 
+                    SURPREENDA-ME
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <main class="container-main">
+        
+        <div class="texto-container">
+            <div class="sub-titulo">
+                <p>Explore toda Variedade e Categorias</p>
+            </div>
+
+            <div class="paragrafo">
+                <p>Se estiver procurando uma comédia para fazer você rir, um drama para fazer você pensar ou um documentário para aprender algo novo</p>
+            </div>
+        </div>
+
+        <!-- Lista de Filmes -->
+        <div class="filmes-container">
+            <div class="card">
+                <div class="cards card1">
+                    <img src="src/assets/Img-cards/Filme-de-Ação.webp" alt="filmes de cima">
+                    <div class="card-texto">
+                        <span>Ação</span>
+                        <button><span class="fas fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cards card2">
+                    <img src="src/assets/Img-cards/Filme-de-aventura.png" alt="filmes de cima">
+                    <div class="card-texto">
+                        <span>Aventura</span>
+                        <button><span class="fas fa-arrow-right"></span></button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cards card2">
+                    <img src="src/assets/Img-cards/Filme-de-Drama.jpg" alt="filmes de cima">
+                    <div class="card-texto">
+                        <span>Drama</span>
+                        <button><span class="fas fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cards card2">
+                    <img src="src/assets/Img-cards/Filme-de-comedia.webp" alt="filmes de cima">
+                    <div class="card-texto">
+                        <span>Comedia</span>
+                        <button><span class="fas fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="src/JS/home.js"></script>
+</body>
+</html>

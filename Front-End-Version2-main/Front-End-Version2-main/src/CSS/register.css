@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Manrope', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPk45qp4iVX2ltVpIIYL7DKD9lZTRWpDVQhMGnm7rk66DcSLR_m0NgI6ScrlgKigcCUwv1FtGDUAucTHtYJ2Bgbhxw-xnbuIx-0kEIkQQqIsw29qZz-U9DiV6g9tQ4KW9p8z51nGo8gRw/s1170/netflix-servico-distribuicao-jogos-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -2;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-left img{
+    width: 20px;
+    height: 25px;
+}
+
+.arrow-left button{
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.arrow-left button:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.logo img{
+    width: 250px;
+    height: 120px;
+}
+
+.logo{
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+/* Modal */
+dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 350px;
+    height: auto;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #1E1E1E;
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-title {
+    font-size: 20px;
+    color: #D62E2E;
+    font-weight: bold;
+    padding: 15px 0 12px 20px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 15px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.input-group .form-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+}
+
+.input-group .form-control {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 13px;
+    transition: border-color 0.3s;
+}
+
+.input-group .form-control:focus {
+    outline: none;
+    border-color: #D62E2E;
+    box-shadow: 0 0 5px rgba(214, 46, 46, 0.5);
+}
+
+.form-date {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 12px;
+    transition: border-color 0.3s;
+}
+
+.container-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-sign_in {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #D62E2E;
+    font-weight: 500;
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.password-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.password-options p {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.password-options button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.enter-acount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 8px 0;
+}
+
+.enter-acount span {
+    font-size: 11px;
+    color: #ffffff;
+}
+
+.enter-acount a {
+    color: #fd3b3b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
